@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RAILROAD INK.</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+<div class="start">
+	<a href="https://smile.amazon.com/s?k=railroad+ink"><img class="imgResponsive" src="img/games.jpg"></a>
+	<a class="gameLink" href="https://smile.amazon.com/s?k=railroad+ink">Want to play expansion rules, or draw on a real board? It's more fun that way! Buy RAILROAD INK now.</a>
+	<button id="startBtn">Play</button>
+	<p><a class="button" href="https://www.youtube.com/watch?v=rC6PVAmP7Bg" target="_blank">About This Game</a></p>
+</div>
+
+<div class="container hidden">
+	<div id="results" class="hidden">
+		<h2 id="scoreBox">Final Score: <span id="finalScore">0</span></h2>
+		<h3>Exits Score: <span id="exitsScore">0</span></h3>
+		<p id="exitsDescription"></p>
+		<h3 id="highlightLongestRoad">Longest Road: <span id="longestRoad">0</span></h3>
+		<h3 id="highlightLongestRail">Longest Rail: <span id="longestRail">0</span></h3>
+		<h3>Center Tiles: <span id="centerTiles">0</span></h3>
+		<h3 id="highlightErrors">Errors: <span id="errors">0</span></h3>
+		<hr>
+		<a href="index.html">Play again</a>
+	</div>
+
+	<div id="header">
+		<span id="roundCount"></span>
+		<div id="pickYourPieces">
+			<button id="randomRoll">Roll Dice</button>
+			<button id="manualSelection">Choose Tiles</button>
+		</div>
+	</div>
+	
+	<div id="pieceDisplay">
+	<p id="manualSelectList"></p>
+	<p><span class="pieceHeading">Pieces: </span> <span id="pieceSelector"></span><button id="resetManual" class="hidden">Reset</button></p>
+
+	<p><span class="pieceHeading">Specials: </span> <span id="specials"></span></p>
+
+	<div id="selectedPiece">
+		<span>Selected:</span>
+		<span id="namedPiece"></span>
+		<span id="reversePiece"></span>
+	</div>
+	</div>
+
+	<br> 
+
+	<div id="messages"></div>
+	<div id="grid"></div>
+
+	<div id="bottom">
+		<button class="ink" id="endRoundBtn">ink</button>
+
+	</div>
+
+	<div id="copyright">Railroad Ink <a href="https://www.youtube.com/watch?v=rC6PVAmP7Bg" target="_blank">created by Horrible Guild</a>. App built by <a href="https://www.kybard.com" target="_blank">Kybard</a>. 2020.</div>
+
+</div>
+<script type="text/javascript" src="js/js.js"></script>
+</body>
+
+</html>
